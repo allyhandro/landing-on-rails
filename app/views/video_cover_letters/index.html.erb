@@ -1,2 +1,17 @@
-<h1>Hello Rails!</h1>
-<p>this will eventually be the landing page for the video cover letter.</p>
+<body>
+    <h1>Hello Rails!</h1>
+    <p>this will eventually be the landing page for the video cover letter.</p>
+    
+    <h2>Videos</h2>
+    <ul>
+        <% @videos.each do |video| %>
+        <li>
+        <a href="/videos/<%= video.id %>">
+            <%= video.title %>
+        </a>
+        <div><%= video.url %></div>
+        </li>
+        <% end %>
+    </ul>
+<body>
+ 

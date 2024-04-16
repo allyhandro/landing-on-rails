@@ -1,0 +1,21 @@
+<head>
+    <%# Plyr library %>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+</head>
+<body>
+    <div>
+    <h1><%= @video.title %></h1>
+        <p><%= @video.description %></p>
+        
+        <video id="player" controls preload="none" poster="">
+            <source src="<%= @video.url %>" type="video/mp4" />
+            <p>Your browser doesn't support HTML5 video. Here is a <a href="<%= @video.url %>">link to the video</a> instead.</p>
+        </video>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const player = new Plyr('#player');
+            });
+        </script>
+    </div>
+</body

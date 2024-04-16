@@ -1,0 +1,2 @@
+class VideoCoverLetter < ApplicationRecord
+end
