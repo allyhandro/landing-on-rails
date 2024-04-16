@@ -14,8 +14,11 @@ Rails.application.routes.draw do
   root "video_cover_letters#index" 
   # add a video_cover_letter route to portfolio
   # newbQ: style guide suggests snake_case, but it feels weirder than whatever-case-this-is
-  get "/videos", to: "video_cover_letters#index"
+  # get "/videos", to: "video_cover_letters#index"
 
-  # view single video by ID
-  get "/videos/:id", to: "video_cover_letters#show"
+  # # view single video by ID
+  # get "/videos/:id", to: "video_cover_letters#show"
+
+  # Resourceful Routing even though its weird. 
+  resources :video_cover_letters
 end
