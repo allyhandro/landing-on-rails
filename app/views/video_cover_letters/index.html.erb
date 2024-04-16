@@ -6,9 +6,10 @@
     <ul>
         <% @videos.each do |video| %>
         <li>
-        <<a href="<%= video_cover_letter_path(video) %>">
+        <a href="<%= video_cover_letter_path(video)%>">
             <%= video.title %>
-        </a>>
+        </a>
+        <%= link_to video.title, video%>
         <div><%= video.url %></div>
         </li>
         <% end %>
