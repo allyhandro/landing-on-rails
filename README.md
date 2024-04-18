@@ -1,5 +1,5 @@
 # landing-on-rails
-A small portfolio project to messaround with Ruby on Rails and display my enthusiasm for Software Engineering roles and distain of neverending hackerrank/leetcode problems :P
+A small portfolio project to messaround with Ruby on Rails and display my _enthusiasm_ for {Software Engineering role} and distain of neverending hackerrank/leetcode problems :P
 
 It's been a while since I've worked on strictly frontend, and with all the time on my funemployed hands since my layoff in April I figured I might as well learn a new language as well. It's a good refreher too as I plan on applying to some Fullstack roles. 
 
