@@ -11,20 +11,23 @@ while learning some Ruby and those Rails they supposedly roll on ᕕ( ᐛ )ᕗ
 
 Maybe I'll expand this into a real portfolio someday with other sections.... hence the name `portfolio`
 
+### Deployment instructions
+This project was made with Ruby version `3.3.0`. Supposedly there's a Rakefile to be used that's more or less == Makefile...but until I understand that config, to start server use:
+`rails s` 
+
+### Linting
+haha, I'm a robot too, RuboCop. 
+`rubocop`
+
+#### System dependencies / Notable Gems (for me, a newbie)
+* Hotwire - default front-end for Rails: apparently rails devs avoid js like the plague ¯\_(ツ)_/¯
+* [RuboCop](https://github.com/rubocop/rubocop)🤖  
+
+
 
 ### Boilerplate rails
 ---
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
 Things you may want to cover:
-
-* Ruby version
-&nbsp;3.3.0p0
-
-* System dependencies
-&nbsp;Hotwire - default front-end for Rails: apparently rails devs avoid js like the plague ¯\_(ツ)_/¯
-&nbsp;[RuboCop](https://github.com/rubocop/rubocop)🤖 - linter: haha, I'm a robot too, RuboCop. 
 
 * Configuration
 
@@ -35,15 +38,5 @@ Things you may want to cover:
 * How to run the test suite
 
 * Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-&nbsp;Supposedly there's a Rakefile that's more or less == Makefile...
-&nbsp;but until then
-&nbsp;to start server
-&nbsp;`rails s` 
-(Ctrl-C to stop)
-
-* Linting
-`rubocop`
 
 * ...
