@@ -27,9 +27,10 @@ Go go gadget rubocop! Autocorrect those lint issues!
 
 
 #### System dependencies / Notable Gems (for me, a newbie)
-* Hotwire - default front-end for Rails: apparently rails devs avoid js like the plague ┐(シ)┌
+* [Hotwire](https://hotwired.dev/) - default front-end for Rails: apparently rails devs avoid js like the plague ┐(シ)┌
+* [Stimulus](https://stimulus.hotwired.dev/) - dynamic html
 * [RuboCop](https://github.com/rubocop/rubocop)  
-
+* [Swiper](https://uiinitiative.com/catalog/fashion-slider) - Fashion Slider component
 
 
 ### Boilerplate rails
