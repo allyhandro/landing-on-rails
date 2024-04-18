@@ -17,7 +17,10 @@ This project was made with Ruby version `3.3.0`. Supposedly there's a Rakefile t
 
 ### Linting
 haha, I'm a robot too, RuboCop. 
-`rubocop`
+Go go gadget rubocop! Autocorrect those lint issues!
+`bundle exec rubocop -A`
+
+_installed via `gem install rubocop` not sure if I should have used the bundler but only works with the bundle command....?_
 
 #### System dependencies / Notable Gems (for me, a newbie)
 * Hotwire - default front-end for Rails: apparently rails devs avoid js like the plague ¯\_(ツ)_/¯

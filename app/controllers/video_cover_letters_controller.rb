@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Tutorial class with some methods that no longer make sense...
 class VideoCoverLettersController < ApplicationController
   def index
     @videos = VideoCoverLetter.all
@@ -21,7 +24,8 @@ class VideoCoverLettersController < ApplicationController
   end
 
   private
-    def video_params
-      params.require(:video_cover_letter).permit(:title, :description, :url)
-    end
+
+  def video_params
+    params.require(:video_cover_letter).permit(:title, :description, :url)
+  end
 end
