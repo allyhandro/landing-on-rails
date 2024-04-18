@@ -33,3 +33,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore temp images used during hacking things together
+/assets/images/*.mp4
