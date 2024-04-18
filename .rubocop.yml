@@ -1,0 +1,8 @@
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'test/**/*.rb'
+    - 'config/environments/*.rb'
+AllCops:
+  NewCops: enable
