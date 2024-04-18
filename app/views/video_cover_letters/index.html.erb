@@ -1,18 +1,25 @@
-<body>
-    <h1>Hello Rails!</h1>
-    <p>this will eventually be the landing page for the video cover letter.</p>
-    
-    <h2>Videos</h2>
-    <ul>
-        <% @videos.each do |video| %>
-        <li>
-        <a href="<%= video_cover_letter_path(video)%>">
-            <%= video.title %>
-        </a>
-        <%= link_to video.title, video%>
-        <div><%= video.url %></div>
-        </li>
-        <% end %>
-    </ul>
-<body>
- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DownTheBarrel</title>
+        <meta name="viewport" content="width=device-width, initial-scale-1">
+        <%# "the Rails method csrf_meta_tag [prevents] cross-site
+        request forgery (CSRF), a type of malicious web attack.
+        Don’t worry about the details (I don’t);" %>
+        <%= csrf_meta_tags %>
+        <%# content security policy tag for cross-site scripting %>
+        <% csp_meta_tag %>
+
+        <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Hello Rails!</h1>
+            <p>this will eventually be the header content for the static video cover letter.</p>
+        </div>
+        <div class="video-cover-letter">
+            <%= video_tag(['piplup_sidebyside'], :autoplay => "autoplay", :controls => true, :width =>'1420px') %>
+        </div>
+    <body>
+</html>
