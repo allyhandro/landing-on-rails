@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>DownTheBarrel</title>
-        <meta name="viewport" content="width=device-width, initial-scale-1">
+        <meta name="viewport" content="width=device-width">
         <%# "the Rails method csrf_meta_tag [prevents] cross-site
         request forgery (CSRF), a type of malicious web attack.
         Don’t worry about the details (I don’t);" %>
@@ -19,7 +19,56 @@
             <p>this will eventually be the header content for the static video cover letter.</p>
         </div>
         <div class="video-cover-letter">
+            <%# TODO: figure out play on load (seems like callback territory) %>
             <%= video_tag(['piplup_sidebyside'], :autoplay => "autoplay", :controls => true, :width =>'1420px') %>
         </div>
-    <body>
+        <%# slider main container %>
+        <div data-controller="carousel" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide github-link">
+                    <h3>You really did this?</h3>
+                    <body>Yeah, I really did. I really did learn ruby to
+                         create this site just so I could impress you. 
+                         <a href="https://github.com/allyhandro/landing-on-rails/tree/main">See for yourself!)</a>
+                </div>
+                <div class="swiper-slide keeping-work-fun">
+                    <h3>How I Keep Work Fun</h3>
+                    <ul class="funtime-colleague">
+                        <li>Just check out some of the classnames on this page!</li>
+                        <li>Ever heard of <a href="https://kaomoji.ru/en/">Kaomoji?</a> You will.</li>
+                        <li>Documentation? I think you mean ✨documen-slay-tion✨!
+                            <%# TODO: replace with the published href link %>
+                            <a href="https://www.notion.so/anime-garbage/Project-Down-the-Barrel-6e750f09f58e49eea8ef8770e47cf3c5">
+                                Learn, Laugh, and Log with me.
+                            </a>
+                        </li>
+                        <li>
+                            <%# TODO  memeliography%>
+                            <a>Up to the Minute Pop Culture References</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <h3>Testimonials</h3>
+                    <div class="quote-carousel">
+                        <ul class="testimonials">
+                            <li class="affirmations">
+                                <p>Your approach to recognizing, communicating,
+                                and honouring your needs is nothing short of brilliant.</p>
+                            <li>
+                            <li class="affirmations">
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="contact-me">
+            <h2>Contact Me</h2>
+            <body>This will eventually be a contact me form</body>
+            <%# TODO: replace with a proper form, maybe something with mailers" %>
+            <textarea placeholder="You're hired."></textarea>
+        </div>
+    </body>
+    <footer>
+        <p>idk, footer stuff ig.</p>
+    </footer>
 </html>

@@ -6,3 +6,5 @@ Metrics/BlockLength:
     - 'config/environments/*.rb'
 AllCops:
   NewCops: enable
+  Exclude:
+    - 'config/environments/*'

@@ -1,0 +1,26 @@
+/*
+* Sassy.
+ */
+// idk why this didn't work, curious, but not curious enough to find out.
+@use "swiper/scss";
+@use "swiper/scss/autoplay";
+
+
+.swiper-slide {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pink {
+    background-color: lightpink;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightblue;
+}

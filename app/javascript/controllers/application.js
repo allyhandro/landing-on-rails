@@ -1,12 +1,12 @@
-import { Application } from "@hotwired/stimulus"
+import { Application } from "stimulus"
+import Carousel from "stimulus-carousel"
 
 const application = Application.start()
 
+application.register("carousel", Carousel)
+
 // Configure Stimulus development experience
 application.debug = false
-window.Stimulus   = application
+window.Stimulus = application
 
-// Plyr requirement...
-// src: https://reintech.io/blog/creating-video-streaming-applications-with-ruby
-//= require plyr
 export { application }

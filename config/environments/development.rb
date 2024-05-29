@@ -3,6 +3,17 @@
 require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
+  # Ally added....for reasons.
+  # config default logger
+  Rails.logger = Logger.new($stdout)
+  Rails.logger.level = Logger::DEBUG
+  config.logger = ActiveSupport::Logger.new("log/#{Rails.env}.log")
+
+  config.sass.preferred_syntax = :sass
+  config.sass.syntax = :sass
+
+  # ===== end ally added.
+
   # Settings specified here will take precedence over those in config/application.rb.
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
@@ -17,11 +28,6 @@ Rails.application.configure do
 
   # Enable server timing
   config.server_timing = true
-
-  # config default logger
-  Rails.logger = Logger.new($stdout)
-  Rails.logger.level = Logger::DEBUG
-  config.logger = ActiveSupport::Logger.new("log/#{Rails.env}.log")
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.

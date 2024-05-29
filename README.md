@@ -1,5 +1,5 @@
 # landing-on-rails
-A small portfolio project to messaround with Ruby on Rails and display my _enthusiasm_ for Software Engineering roles and distain of neverending hackerrank/leetcode problems :P
+A small portfolio project to messaround with Ruby on Rails and display my _enthusiasm_ for Software Engineering roles and distain of neverending hackerrank/leetcode problems on the daily :P
 
 It's been a while since I've worked on strictly frontend, and with all the time on my funemployed hands since my layoff in April I figured I might as well learn a new language as well. It's a good refreher too as I plan on applying to some Fullstack roles. 
 
@@ -10,14 +10,21 @@ while learning some Ruby and those Rails they supposedly roll on ᕕ( ᐛ )ᕗ
 - [Project Notion](https://www.notion.so/anime-garbage/Project-Down-the-Barrel-6e750f09f58e49eea8ef8770e47cf3c5?pvs=4) {{UNPUBLISHED}}
 
 
-## Deployment instructions
-This project was made with Ruby version `3.3.0`. Supposedly there's a Rakefile to be used that's more or less == Makefile...but until I understand that config, to start server use:
+## Development instructions
+### Installation
+From the [Hotwired Screencast](https://hotwired.dev/#screencast) and judging from [ImportMap docs](https://guides.rubyonrails.org/working_with_javascript_in_rails.html) Rails projects using import maps do not need Node or Yarn to function.
 
+```
+<!-- install dependencies -->
+bundle
+```
+
+### Start Server
 `rails s`
 
 or
 
-`rake dev` - I'd like to add environment handling but I gave up (╥_╥)
+`rake dev` - I'd like to add more environment handling but ~~I gave up~~ decided it was out of scope.(╥_╥)
 
 ### Linting
 haha, I'm a robot too, RuboCop. 🤖
