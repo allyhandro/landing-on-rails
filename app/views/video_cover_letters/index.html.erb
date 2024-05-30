@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>DownTheBarrel</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
         <%# "the Rails method csrf_meta_tag [prevents] cross-site
         request forgery (CSRF), a type of malicious web attack.
         Don’t worry about the details (I don’t);" %>
@@ -11,6 +11,7 @@
         <% csp_meta_tag %>
 
         <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     </head>
 
     <body>
@@ -23,15 +24,25 @@
             <%= video_tag(['piplup_sidebyside'], :autoplay => "autoplay", :controls => true, :width =>'1420px') %>
         </div>
         <%# slider main container %>
-        <div data-controller="carousel" class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide github-link">
+        <swiper-container 
+            class="swiperCarousel"
+            navigation="true"
+            pagination="true"
+            pagination-type="progressbar"
+            loop="true"
+            autoplay="true"
+            autoplay-delay="3000"
+        >
+            <swiper-slide>
+                <div class="github-link">
                     <h3>You really did this?</h3>
-                    <body>Yeah, I really did. I really did learn ruby to
-                         create this site just so I could impress you. 
-                         <a href="https://github.com/allyhandro/landing-on-rails/tree/main">See for yourself!)</a>
+                    <p>Yeah, I really did. I really did learn ruby to
+                            create this site just so I could impress you. </p>
+                    <a href="https://github.com/allyhandro/landing-on-rails/tree/main">See for yourself!)</a>
                 </div>
-                <div class="swiper-slide keeping-work-fun">
+            </swiper-slide>
+            <swiper-slide>
+                <div class="keeping-work-fun">
                     <h3>How I Keep Work Fun</h3>
                     <ul class="funtime-colleague">
                         <li>Just check out some of the classnames on this page!</li>
@@ -48,19 +59,25 @@
                         </li>
                     </ul>
                 </div>
-                <div class="swiper-slide">
+            </swiper-slide>
+            <swiper-slide>
+                <div class="testimonials">
                     <h3>Testimonials</h3>
                     <div class="quote-carousel">
-                        <ul class="testimonials">
+                        <ul>
                             <li class="affirmations">
                                 <p>Your approach to recognizing, communicating,
                                 and honouring your needs is nothing short of brilliant.</p>
-                            <li>
+                            </li>
                             <li class="affirmations">
+                                <p> Something something testimonial </p>
+                            </li>
                         </ul>
                     </div>
                 </div>
-        </div>
+            </swiper-slide>
+        </swiper-container>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
         <div class="contact-me">
             <h2>Contact Me</h2>
             <body>This will eventually be a contact me form</body>

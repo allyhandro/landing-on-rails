@@ -1,26 +1,33 @@
 /*
 * Sassy.
  */
-// idk why this didn't work, curious, but not curious enough to find out.
-@use "swiper/scss";
-@use "swiper/scss/autoplay";
+html,
+body {
+    position: relative;
+    height: 100%;
+}
 
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
 
-.swiper-slide {
-    height: 250px;
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.pink {
+.github-link {
     background-color: lightpink;
 }
 
-.green {
+.keeping-work-fun {
     background-color: lightgreen;
 }
 
-.blue {
+.testimonials {
     background-color: lightblue;
 }
