@@ -11,7 +11,7 @@
 # root "posts#index"
 # ========================================== bootstrap end ================================
 Rails.application.routes.draw do
-  resources :video_cover_letters
+  resources :video_cover_letters, :contact_form
   # go to video at startup
   root 'video_cover_letters#index'
   # add a video_cover_letter route to portfolio
