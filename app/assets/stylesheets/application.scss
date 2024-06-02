@@ -10,24 +10,13 @@ body {
 swiper-container {
     width: 100%;
     height: 100%;
+    display: flex;
 }
 
 swiper-slide {
     text-align: center;
     font-size: 18px;
-    display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.github-link {
-    background-color: lightpink;
-}
-
-.keeping-work-fun {
-    background-color: lightgreen;
-}
-
-.testimonials {
-    background-color: lightblue;
+    padding: 10px;
 }

@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 # Cheeky Contact Form controller
-class VideoCoverLetter::ContactFormController < VideoCoverLettersController
+class ContactFormController < ApplicationController
   def create
     # handle submission
     @name = params[:contact_form][:name]
-    @last_name = params[:contact_form][:last_name]
+    @subject = params[:contact_form][:last_name]
     @email = params[:contact_form][:email]
     @message = params[:contact_form][:message]
 
