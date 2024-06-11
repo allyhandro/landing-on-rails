@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Tutorial class with some methods that no longer make sense...
+# Tutorial class with some extra boilerplate we prob don't need for MVP...
 class VideoCoverLettersController < ApplicationController
   def index
     @videos = VideoCoverLetter.all

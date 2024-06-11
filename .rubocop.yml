@@ -5,6 +5,7 @@ Metrics/BlockLength:
     - 'test/**/*.rb'
     - 'config/environments/*.rb'
 AllCops:
+  UseCache: false
   NewCops: enable
   Exclude:
     - 'config/environments/*'

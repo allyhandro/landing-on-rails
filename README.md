@@ -40,6 +40,10 @@ Go go gadget rubocop! Autocorrect those lint issues!
 * [Swiper Element](https://swiperjs.com/element) - Swiper WebComponent (Element)
 
 
+##### If only, If only, the developer sighed
+Here are a few features I think would be great to add to this if I have the time/will: 
+- Contact form should have an embedded [Calendy](https://help.calendly.com/hc/en-us/articles/223147027-Embed-options-overview) widget so recruiters / site viewers can schedule an appointment with me directly through the site.
+
 ### Boilerplate rails
 ---
 Things you may want to cover:

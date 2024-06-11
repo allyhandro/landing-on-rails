@@ -80,7 +80,27 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
         <div class="contact-form">
             <h2>Contact Me</h2>
-            <%= render partial: 'contact_form' %>
+            <form action="/send_contact" method="post" class="container">
+                <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input name="name" type="text" class="form-control mb-1" placeholder="Reed Cruiter" value="Reed Cruiter">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input name="email" type="email" class="form-control mb-1" placeholder="recruitment@twobarrels.com">
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input name="subject" type="text" class="form-control mb-1" placeholder="Good News" value="Good News">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" class="form-control" placeholder="You're Hired." value="You're Hired."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <%# <%= render partial: 'contact_form' %>
             <%# TODO: replace with a proper form, maybe something with mailers?" %>
             <%# <textarea placeholder="You're hired."></textarea> %>
         </div>

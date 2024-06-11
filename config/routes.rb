@@ -11,7 +11,7 @@
 # root "posts#index"
 # ========================================== bootstrap end ================================
 Rails.application.routes.draw do
-  resources :video_cover_letters, :contact_form
+  resources :video_cover_letters, :contact
   # go to video at startup
   root 'video_cover_letters#index'
   # add a video_cover_letter route to portfolio
@@ -23,4 +23,7 @@ Rails.application.routes.draw do
 
   # Resourceful Routing even though its weird.
   resources :video_cover_letters
+
+  # Mail action..? mapping?
+  post 'send_contact' => 'contact#send_contact'
 end
