@@ -52,6 +52,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_controller.per_form_csrf_tokens = true
   # hmm how to config for prod?
+  # smtp_settings for prod should be via mailchimp as we need a valid app smtp? how to keep this secret...
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
     port: 587,
